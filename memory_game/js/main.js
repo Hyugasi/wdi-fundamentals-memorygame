@@ -38,7 +38,7 @@ function flipCard() {
 	console.log(cards[cardId].cardImage);
 	console.log(cards[cardId].suit);
 	this.setAttribute('src', cards[cardId].cardImage);
-if (cardsInPlay.length === 2) {
+if (cardsInPlay.length %2 === 0) {
 	checkForMatch();
 }
 }
